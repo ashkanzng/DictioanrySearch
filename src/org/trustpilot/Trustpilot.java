@@ -39,9 +39,7 @@ public class Trustpilot {
 			String line;
 			while ((line = br.readLine()) != null) {
 				if (check_letter(line)) {
-					if (!wordlist.contains(line)) {
-						wordlist.add(line);
-					}
+					wordlist.add(line);
 				}
 			}
 			br.close();
